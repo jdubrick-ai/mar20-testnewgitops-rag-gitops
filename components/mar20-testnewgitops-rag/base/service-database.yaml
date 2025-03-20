@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/instance: mar20-testnewgitops-rag-database
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: mar20-testnewgitops-rag-database
+  name: mar20-testnewgitops-rag-database
+spec:
+  ports:
+    - port: 8000
+      protocol: TCP
+      targetPort: 8000
+  selector:
+    app.kubernetes.io/instance: mar20-testnewgitops-rag-database

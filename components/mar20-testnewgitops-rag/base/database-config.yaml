@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mar20-testnewgitops-rag-database-config
+data:
+  VECTORDB_HOST: "mar20-testnewgitops-rag-database"
+  VECTORDB_PORT: "8000"

@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mar20-testnewgitops-rag-model-config
+data:
+  MODEL_ENDPOINT: "http://mar20-testnewgitops-rag-model-server:8001"
